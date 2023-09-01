@@ -46,9 +46,17 @@ Push ups is a numerical variable, position is categorical.Therefore, we would us
 ```{r}
 boxplot(pushups~position,data=mydata)
 ```
+
+The plot shows that the line players did on average roughly about 15 pushups in 2 minutes and the skills players did roughly about 47 pushups in 2 minutes.
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+favstats(pushups~position,data=mydata)
+```
+The table shows that the skills players did 3x more than the line players did in pushups.
 
 ## Inferential Results
 
